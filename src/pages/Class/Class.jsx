@@ -11,7 +11,7 @@ const Class = ({music}) => {
     const handleEnroll =(music)=>{
         const objectData = {enrollId: _id, courseName,instructorName,price,seats, image, email:user.email}
         if(user && user.email){
-            fetch('https://summer-school-server-six.vercel.app/enrolled',{
+            fetch(' https://summer-school-server-five.vercel.app/enrolled',{
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

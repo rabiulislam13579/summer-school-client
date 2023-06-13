@@ -1,12 +1,11 @@
 import React from 'react';
 import Banner from './Banner/Banner';
-import Footer from './footer/Footer';
 import Instructors from '../../loadData/Instructors';
 import About from './About/About';
-import Class from '../../Class/Class';
-import Photos from './Photo/Photos';
 import MoreInfo from './About/MoreInfo';
 import useTitle from '../../../hooks/useTitle';
+import Footer from './footer/Fotter';
+import Photos from './Photo/Photo';
 
 const Home = () => {
     useTitle('Home')

@@ -6,7 +6,7 @@ const AllCourses = () => {
     
     const [courses, setCourses] = useState([])
     useEffect(() => {
-        fetch('https://summer-school-server-six.vercel.app/classes')
+        fetch(' https://summer-school-server-five.vercel.app/classes')
             .then(res => res.json())
             .then(data => {
                 setCourses(data);
@@ -16,7 +16,7 @@ const AllCourses = () => {
     const handleDelete= (course)=>{
         const proceed = confirm('Are you sure want to delete ?');
         if(proceed){
-            fetch(`https://summer-school-server-six.vercel.app/classes/${course._id}`,{
+            fetch(` https://summer-school-server-five.vercel.app/classes/${course._id}`,{
                 method: 'DELETE'
             })
             .then(res=>res.json())

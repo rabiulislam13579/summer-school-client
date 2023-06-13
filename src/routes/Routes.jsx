@@ -72,7 +72,7 @@ import Payment from "../dashboardPages/Payment/Payment";
         {
           path: 'update/:id',
           element: <AdminRoute><ManageClass></ManageClass></AdminRoute>,
-          loader: ({params})=>fetch(`https://summer-school-server-six.vercel.app/classes/${params.id}`)
+          loader: ({params})=>fetch(` https://summer-school-server-five.vercel.app/classes/${params.id}`)
         },
         {
           path: 'allCourse',

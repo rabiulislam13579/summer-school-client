@@ -5,7 +5,7 @@ const Instructors = () => {
     useTitle('Instructors')
     const [teachers, setTeachers] = useState([]);
     useEffect(() => {
-        fetch(`https://summer-school-server-six.vercel.app/instructors`)
+        fetch(` https://summer-school-server-five.vercel.app/instructors`)
             .then(res => res.json())
             .then(data => setTeachers(data))
     }, [])
@@ -20,7 +20,6 @@ const Instructors = () => {
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title">{instructor.name}</h2>
-                                <p>{instructor.description}</p>
                                 <p>
                                     Rating: {instructor.rating}</p>
                                 <div className="card-actions">

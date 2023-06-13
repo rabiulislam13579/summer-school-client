@@ -15,7 +15,7 @@ const AllUsers = () => {
     const handleDelete=(id)=>{
         const proceed = confirm('Are you sure want to delete ?');
         if(proceed){
-            fetch(`https://summer-school-server-six.vercel.app/users/${id}`,{
+            fetch(` https://summer-school-server-five.vercel.app/users/${id}`,{
                 method: 'DELETE',
                 
             })
@@ -33,7 +33,7 @@ const AllUsers = () => {
 
     }
     const handleMakeAdmin= (id)=>{
-        fetch(`https://summer-school-server-six.vercel.app/users/admin/${id}`,{
+        fetch(` https://summer-school-server-five.vercel.app/users/admin/${id}`,{
             method: 'PATCH',
             
         })
