@@ -10,7 +10,7 @@ const ManageClass = () => {
     
         console.log(data);
         
-            fetch(` https://summer-school-server-five.vercel.app/classes/${_id}`,{
+            fetch(` https://summer-school-server-pink.vercel.app/classes/${_id}`,{
                 method: 'PUT',
                 headers:{
                     'content-type': 'application/json'

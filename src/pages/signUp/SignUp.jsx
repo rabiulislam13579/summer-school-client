@@ -22,7 +22,7 @@ const SignUp = () => {
 
             .then(result => {
                const userObj = {name,photo,email}
-                fetch(' https://summer-school-server-five.vercel.app/users',{
+                fetch(' https://summer-school-server-pink.vercel.app/users',{
                     method: 'POST',
                     headers:{
                         'content-type': 'application/json'

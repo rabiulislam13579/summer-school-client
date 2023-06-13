@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Photos = () => {
     const [photos, setPhotos] = useState([])
     useEffect(() => {
-        fetch(' https://summer-school-server-five.vercel.app/classes')
+        fetch(' https://summer-school-server-pink.vercel.app/classes')
             .then(res => res.json())
             .then(data => {
                 setPhotos(data)

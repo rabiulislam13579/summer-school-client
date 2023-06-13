@@ -11,7 +11,7 @@ const MyCart = () => {
     const handleDelete= (row)=>{
         const proceed = confirm('Are you sure want to delete ?');
         if(proceed){
-            fetch(` https://summer-school-server-five.vercel.app/enrolled/${row._id}`,{
+            fetch(` https://summer-school-server-pink.vercel.app/enrolled/${row._id}`,{
                 method: 'DELETE'
             })
             .then(res=>res.json())

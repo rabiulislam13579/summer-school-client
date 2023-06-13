@@ -4,7 +4,7 @@ import Class from '../Class/Class';
 const Classes = () => {
     const [musics, setMusics] = useState([]);
     useEffect(() => {
-        fetch(` https://summer-school-server-five.vercel.app/classes`)
+        fetch(` https://summer-school-server-pink.vercel.app/classes`)
             .then(res => res.json())
             .then(data => setMusics(data))
     }, [])
