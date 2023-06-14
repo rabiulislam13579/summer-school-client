@@ -11,7 +11,7 @@ const Class = ({music}) => {
     const handleEnroll =(music)=>{
         const objectData = {enrollId: _id, courseName,instructorName,price,seats, image, email:user.email}
         if(user && user.email){
-            fetch(' https://summer-school-server-pink.vercel.app/enrolled',{
+            fetch('https://summer-school-server-pink.vercel.app/enrolled',{
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
@@ -31,7 +31,7 @@ const Class = ({music}) => {
     }
 
     return (
-        <div className="  card w-96 bg-base-100 shadow-xl" >
+        <div className={`card w-96  shadow-xl ${seats == 0 ? 'bg-red-200' : 'bg-base-100'}`}>
                             <figure className="px-10 pt-10">
                                 <img src={image} alt="Shoes" className="rounded-xl" />
                             </figure>
@@ -41,7 +41,7 @@ const Class = ({music}) => {
                                 <p>Price : $ {price}</p>
                                 <p>Available Seats {seats}</p>
                                 <div className="card-actions">
-                                    <button  onClick={()=>handleEnroll(music)} className="btn btn-primary">Enroll Now</button>
+                                    <button  onClick={()=>handleEnroll(music)} disabled={seats == 0} className="btn btn-primary">Enroll Now</button>
                                 </div>
                             </div>
                         </div>
